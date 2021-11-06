@@ -2,10 +2,10 @@ const express = require("express");
 const path = require("path");
 
 const app = express();
-const PORT = process.env.port || 3001;
+const PORT = process.env.port || 3000;
 
 //middleware
-app.use(express.static());
+app.use(express.static(__dirname + '/public'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
@@ -17,5 +17,6 @@ app.get('/routes', (req, res) =>
 app.listen(PORT, () =>
   console.log(`Example app listening at http://localhost:${PORT}`)
 );
+
 
 
