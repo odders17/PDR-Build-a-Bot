@@ -1,0 +1,24 @@
+{
+  "name": "pdr-build-a-bot",
+  "version": "1.0.0",
+  "description": "An application that allows you to build a pc",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/odders17/PDR-Build-a-Bot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/odders17/PDR-Build-a-Bot/issues"
+  },
+  "homepage": "https://github.com/odders17/PDR-Build-a-Bot#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "path": "^0.12.7"
+  }
+}
