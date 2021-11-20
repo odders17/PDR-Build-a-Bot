@@ -1,6 +1,6 @@
-require("dotenv").config();
+require("dotenv").config("../");
 const express = require("express");
-const path = require("path");
+const path = require("path"); 
 const connectDB = require("./config/db");
 
 const app = express();
@@ -12,12 +12,13 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // Routes
-app.get("/", (req, res) =>
-  res.sendFile(path.join(__dirname, "public/index.html"))
-);
-app.get("/about", (req, res) =>
-  res.sendFile(path.join(__dirname, "public/about.html"))
-);
+// app.get("/", (req, res) =>
+//   res.sendFile(path.join(__dirname, "public/index.html"))
+// );
+// app.get("/about", (req, res) =>
+//   res.sendFile(path.join(__dirname, "public/about.html"))
+// );
+
 app.listen(PORT, () =>
   console.log(`Example app listening at http://localhost:${PORT}`)
 );
