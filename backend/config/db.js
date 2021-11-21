@@ -1,4 +1,4 @@
-// require("dotenv").config("../");
+require("dotenv").config("../");
 const mongoose = require("mongoose");
 const connectDB = async () => {
   try {
@@ -9,12 +9,15 @@ const connectDB = async () => {
     // });
 
     console.log("inside try");
-    const db = await mongoose.connect("mongodb+srv://BuildaBot:BuildaBot@cluster0.oqw1y.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    });
+    await mongoose.connect(
+      "mongodb+srv://BuildaBot:BuildaBot@cluster0.oqw1y.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+      {
+        useNewUrlParser: true,
+        useUnifiedTopology: true,
+      }
+    );
 
-    console.log("mongodb connection success", db);
+    console.log("mongodb connection success");
   } catch (error) {
     console.log(error);
     process.exit(1);
