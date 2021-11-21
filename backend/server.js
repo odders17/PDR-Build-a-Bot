@@ -1,13 +1,13 @@
 require("dotenv").config("../");
 const express = require("express");
-const path = require("path"); 
+// const path = require("path");
 const connectDB = require("./config/db");
 
 const app = express();
 const PORT = process.env.port || 3000;
 connectDB();
 //middleware
-app.use(express.static(__dirname + "/public"));
+app.use(express.static(__dirname + "/Frontend/public"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
