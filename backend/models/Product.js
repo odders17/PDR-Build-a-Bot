@@ -15,8 +15,8 @@ const productSchema = new mongoose.Schema({
     type: Number,
     required: true,
   },
-
-  countInStock: {
+//How come when we changed from lowercase countinstock to uppercase countInStock, this worked?
+  countInStock: {    
     type: Number,
     required: true,
   },

@@ -2,7 +2,7 @@ require("dotenv").config("../");
 const express = require("express");
 // const path = require("path");
 const connectDB = require("./config/db");
-const productRoutes = require("./")
+const productRoutes = require("./routes/productRoutes")
 
 const app = express();
 const PORT = process.env.port || 3000;
@@ -13,7 +13,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // Routes
-app.use("/products",)
+app.use("/api/products", productRoutes);
 
 
 
