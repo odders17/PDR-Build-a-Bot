@@ -9,7 +9,7 @@ const connectDB = async () => {
     // });
 
     console.log("inside try");
-    await mongoose.connect(
+    const db = await mongoose.connect(
       "mongodb+srv://BuildaBot:BuildaBot@cluster0.oqw1y.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
       {
         useNewUrlParser: true,
@@ -17,7 +17,7 @@ const connectDB = async () => {
       }
     );
 
-    console.log("mongodb connection success");
+    console.log("mongodb connection success", db);
   } catch (error) {
     console.log(error);
     process.exit(1);
