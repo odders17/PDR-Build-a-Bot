@@ -1,6 +1,6 @@
 # BuildABot
 
-BuildABot is an application focused on lowering the barriers to entry for pc building. We as recently graduated junior devs have gained a sharp interest in computers, seeing their brilliance, but as well as their limitations. We all had the great passion of creating our own computers, but felt that the learning curve is still too steep for new builders. As such we aimed to build an application that would facilitate the computer part selection process.
+BuildABot is an application focused on lowering the barriers to entry for pc building. We as recently graduated junior devs have gained a sharp interest in computers, seeing their brilliance, but as well as their limitations. We all had the great passion of creating our own computers, but felt that the learning curve is still too steep for new builders. As such, we aimed to build an application that would facilitate the computer part selection process.
 
 ## The Creators:
 
